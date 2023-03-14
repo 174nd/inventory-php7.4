@@ -1,0 +1,75 @@
+RewriteEngine on
+ErrorDocument 404 /404.php
+
+RewriteRule ^$ logme-in.php [L]
+RewriteRule ^logout/$ logme-out.php [L]
+RewriteRule ^error/$ error.php [L]
+#------------------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------------------
+RewriteRule ^admin/$ admin/main.php [L]
+RewriteRule ^admin/export/surat-pinjaman/$ admin/export/surat-pinjaman.php [L]
+
+#Histori
+RewriteRule ^admin/histori/$ admin/histori/main.php [L]
+RewriteRule ^admin/histori/([a-zA-Z0-9\-]+)$ admin/histori/main.php?id_histori=$1 [L]
+
+#Barang
+RewriteRule ^admin/barang/$ admin/barang/main.php [L]
+RewriteRule ^admin/barang/([a-zA-Z0-9\-]+)$ admin/barang/main.php?id_barang=$1 [L]
+
+#Model Barang
+RewriteRule ^admin/model-barang/$ admin/model-barang/main.php [L]
+RewriteRule ^admin/model-barang/([a-zA-Z0-9\-]+)$ admin/model-barang/main.php?id_mbarang=$1 [L]
+
+#Asset
+RewriteRule ^admin/asset/$ admin/asset/main.php [L]
+RewriteRule ^admin/asset/([a-zA-Z0-9\-]+)$ admin/asset/main.php?id_asset=$1 [L]
+
+#Ruangan
+RewriteRule ^admin/ruangan/$ admin/ruangan/main.php [L]
+RewriteRule ^admin/ruangan/([a-zA-Z0-9\-]+)$ admin/ruangan/main.php?id_ruangan=$1 [L]
+
+
+#Gedung
+RewriteRule ^admin/gedung/$ admin/gedung/main.php [L]
+RewriteRule ^admin/gedung/([a-zA-Z0-9\-]+)$ admin/gedung/main.php?id_gedung=$1 [L]
+
+#User
+RewriteRule ^admin/user/$ admin/user/main.php [L]
+RewriteRule ^admin/user/([a-zA-Z0-9\-]+)$ admin/user/main.php?id_user=$1 [L]
+#------------------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------------------
+RewriteRule ^staff/$ staff/main.php [L]
+RewriteRule ^staff/export/surat-pinjaman/$ staff/export/surat-pinjaman.php [L]
+
+#Histori
+RewriteRule ^staff/histori/$ staff/histori/main.php [L]
+RewriteRule ^staff/histori/([a-zA-Z0-9\-]+)$ staff/histori/main.php?id_histori=$1 [L]
+
+#Barang
+RewriteRule ^staff/barang/$ staff/barang/main.php [L]
+RewriteRule ^staff/barang/([a-zA-Z0-9\-]+)$ staff/barang/main.php?id_barang=$1 [L]
+
+#Model Barang
+RewriteRule ^staff/model-barang/$ staff/model-barang/main.php [L]
+RewriteRule ^staff/model-barang/([a-zA-Z0-9\-]+)$ staff/model-barang/main.php?id_mbarang=$1 [L]
+
+#Asset
+RewriteRule ^staff/asset/$ staff/asset/main.php [L]
+RewriteRule ^staff/asset/([a-zA-Z0-9\-]+)$ staff/asset/main.php?id_asset=$1 [L]
+
+#Ruangan
+RewriteRule ^staff/ruangan/$ staff/ruangan/main.php [L]
+RewriteRule ^staff/ruangan/([a-zA-Z0-9\-]+)$ staff/ruangan/main.php?id_ruangan=$1 [L]
+
+
+#Gedung
+RewriteRule ^staff/gedung/$ staff/gedung/main.php [L]
+RewriteRule ^staff/gedung/([a-zA-Z0-9\-]+)$ staff/gedung/main.php?id_gedung=$1 [L]
+#------------------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------------------
+RewriteRule ^user/$ user/main.php [L]
+RewriteRule ^user/export/surat-pinjaman/$ user/export/surat-pinjaman.php [L]
